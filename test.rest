@@ -1,0 +1,37 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "password": "Bob",
+  "id": 1,
+  "role": "admin"
+}
+
+###
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "password": "Alice",
+  "id": 2,
+  "role": "basic"
+}
+
+###
+
+GET http://localhost:3000/dashboard
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "password": "Alice"
+}
+
+###
+
+GET http://localhost:3000/projects/
+Content-Length: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxpY2UiLCJpYXQiOjE2NjgyNjA3NjF9.9VgBD84Wl-dF4EJUMo7yZu4E7TZWJrZw3OA9h28Bgko
